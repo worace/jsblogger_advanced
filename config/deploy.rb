@@ -1,6 +1,6 @@
 require "bundler/capistrano"
 
-server "178.xxx.xxx.xxx", :web, :app, :db, primary: true
+server "50.116.62.125", :web, :app, :db, primary: true
 
 set :application, "jsblogger_deploy"
 set :user, "worace"
