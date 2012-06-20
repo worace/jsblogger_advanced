@@ -1,4 +1,5 @@
 require "bundler/capistrano"
+require "rvm/capistrano"
 
 server "50.116.62.125", :web, :app, :db, primary: true
 
@@ -7,6 +8,9 @@ set :user, "worace"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
+
+# configure cap to use rvm ruby
+set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"") # Read from local system
 
 set :scm, "git"
 set :repository, "git@github.com:worace/jsblogger_advanced.git"
