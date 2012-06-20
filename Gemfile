@@ -1,9 +1,10 @@
 source 'http://rubygems.org'
 
-#gem 'rails', '3.2.1'
-gem 'rails', :git => 'https://github.com/rails/rails.git', :branch => "3-2-stable"
+gem 'rails', '~> 3.2.1'
 gem 'sqlite3'
 gem 'jquery-rails'
+gem 'unicorn'
+gem 'capistrano'
 
 group :assets do
   gem 'sass-rails'
@@ -18,7 +19,6 @@ group :development, :test do
   gem 'fabrication'
   gem 'guard'
   gem 'guard-rspec'
-  #gem 'rb-fsevent'
   gem 'database_cleaner'
   gem 'launchy'
 end
