@@ -5,6 +5,7 @@ gem 'sqlite3'
 gem 'jquery-rails'
 gem 'unicorn'
 gem 'capistrano'
+gem 'pg'
 
 group :assets do
   gem 'sass-rails'
