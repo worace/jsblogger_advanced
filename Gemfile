@@ -6,6 +6,8 @@ gem 'jquery-rails'
 gem 'unicorn'
 gem 'capistrano'
 gem 'pg'
+gem 'faker'
+gem 'fabrication'
 
 group :assets do
   gem 'sass-rails'
@@ -16,8 +18,6 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'faker'
-  gem 'fabrication'
   gem 'guard'
   gem 'guard-rspec'
   gem 'database_cleaner'
