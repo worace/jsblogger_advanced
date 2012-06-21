@@ -6,7 +6,6 @@ gem 'jquery-rails'
 gem 'unicorn'
 gem 'capistrano'
 gem 'pg'
-gem 'rvm-capistrano'
 
 group :assets do
   gem 'sass-rails'
